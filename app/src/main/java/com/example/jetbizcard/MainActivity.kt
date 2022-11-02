@@ -67,11 +67,19 @@ fun CreateBizCard() {
                 Divider()
                 CreateInfo()
                 Button(onClick = {
-
+                    buttonClickedState.value = !buttonClickedState.value
                 }) {
                     Text(
                         text = "Portfolio", style = MaterialTheme.typography.button
                     )
+                }
+
+                if (buttonClickedState.value) {
+                    Content()
+                } else {
+                    Box() {
+
+                    }
                 }
             }
         }
