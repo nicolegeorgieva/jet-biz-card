@@ -48,9 +48,7 @@ fun CreateBizCard() {
         mutableStateOf(false)
     }
     Surface(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight()
+        modifier = Modifier.fillMaxSize()
     ) {
         Card(
             modifier = Modifier
